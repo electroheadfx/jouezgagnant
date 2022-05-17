@@ -1,0 +1,271 @@
+/* @group RaceData */
+
+
+/* @group race details */
+
+#racedetails {
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	width: 600px;
+	margin: 10px auto;
+	text-align: center;
+	padding: 0 6px;
+	overflow: hidden;
+	clear: both;
+	background-color: #CCDAE3;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+}
+
+#racedetails li {
+	font-family: "Arial Rounded MT Bold", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	float: left;
+	overflow: hidden;
+	font-size: 12px;
+	overflow: hidden;
+	
+}
+
+#racedetails li span {
+	margin: 0 4px;
+	padding: 4px;
+	width: 184px;
+	display: block;
+	text-align: left;
+}
+
+#racedetails li span.label {
+	padding: 6px 4px 4px 4px;
+	color: #65B444;
+	background-color: white;
+	-webkit-border-bottom-left-radius: 8px;
+	-webkit-border-bottom-right-radius: 8px;
+	-moz-border-bottom-left-radius: 8px;
+	-moz-border-bottom-right-radius: 8px;
+}
+
+#racedetails li span.value {
+	font-size: 14px;
+	padding: 8px 4px 10px 4px;
+}
+
+/* @end */
+
+/* @group race tabs */
+
+ul.races {
+	width: 480px;
+	margin: 20px auto 0 auto;
+}
+
+ul.races li {
+	float: left;
+	width: 40px;
+	margin: 0 4px 0 0;
+	padding: 4px 4px 4px 2px;
+	text-align: center;
+	background-color: whitesmoke;
+	-webkit-border-top-left-radius: 8px;
+	-webkit-border-top-right-radius: 8px;
+	-moz-border-top-left-radius: 8px;
+	-moz-border-top-right-radius: 8px;
+}
+
+ul.races li:hover {
+	font-family: "Arial Rounded MT Bold", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #C2231F;
+	background-color: #CCDAE3;
+}
+
+ul.races li.raceon {
+	background-color: #CCDAE3;
+	font-family: "Arial Rounded MT Bold", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+ul.races li.raceon:hover {
+	color: black;
+}
+
+ul.races li.label {
+	text-align: right;
+	font-family: "Arial Rounded MT Bold", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	width: 60px;
+	background-color: white;
+	
+}
+
+/* @end */
+
+
+#racepane {
+	clear: both;
+	width: 500px;
+	background-color: #CCDAE3;
+	margin: 0 auto;
+	padding: 6px;
+	overflow: hidden;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+}
+
+/* @group race notes */
+
+#racepane div.racenotes {
+	margin: 0 0 10px 0;
+	overflow: hidden;
+	clear: both;
+}
+
+#racepane div.racenotes span {
+	font-family: "Arial Rounded MT Bold", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	display: block;
+	float: left;
+}
+
+#racepane div.racenotes span.racefiller {
+	float: left;
+	width: 140px;
+}
+
+#racepane div.racenotes span.racelabel {
+	text-align: right;
+	width: 72px;
+	padding: 4px;
+}
+
+#racepane div.racenotes span.racevalue {
+	width: 60px;
+	padding: 0;
+}
+
+#racepane div.racenotes span.label {
+	font-size: 12px;
+	width: 120px;
+	padding: 6px 4px 0 4px;
+	text-align: right;
+}
+
+#racepane div.racenotes span.value {
+	font-size: 12px;
+	padding: 2px 4px 0 4px;
+}
+
+/* @end */
+
+
+/* @group race labels */
+
+#racepane div.racelabels {
+	width: 140px;
+	float: left;
+	overflow: hidden;
+	clear: both;
+}
+
+#racepane div.racelabels span {
+	font-family: "Arial Rounded MT Bold", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	display: block;
+	text-align: right;
+	height: 22px;
+	padding: 8px 8px 0 8px;
+	border-top: 1px solid #1C262B;
+	text-transform: capitalize;
+}
+
+#racepane div.racelabels span.jgdata {
+	background-color: #bde5ac;
+}
+
+#racepane div.racelabels span.totaldata, #racepane div.raceinfo div.totaldata {
+	border-bottom: 1px solid #1C262B;
+}
+
+/* @end */
+
+/* @group race pane */
+
+#racepane div.raceinfo {
+	float: right;
+	width: 360px;
+	background-color: white;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+}
+
+#racepane div.pad {
+	border: none !important;
+	height: 8px;
+}
+
+#racepane div.raceinfo div {
+	border-top: 1px solid #1C262B;
+}
+
+#racepane div.raceinfo div.jgdata {
+	font-family: "Arial Rounded MT Bold", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	background-color: #bde5ac;
+}
+
+#racepane div.raceinfo div.pmudata {
+	background-color: #CCDAE3;
+}
+
+#racepane div.raceinfo div {
+	clear: both;
+	overflow: hidden;
+}
+
+#racepane div.raceinfo div span {
+	display: block;
+	float: left;
+	text-align: center;
+	padding: 8px 8px 0 8px;
+	width: 104px;
+	height: 22px;
+}
+
+
+
+#racepane div.raceinfo div span.field {
+	padding: 5px 8px 3px 8px;
+}
+
+#racepane div.raceinfo div span.rowdata2 {
+	width: 224px;
+}
+
+
+#racepane input {
+	width: 40px;
+	height: 14px;
+	border: 1px solid gray;
+}
+
+#racepane div.raceinfo span.calculate {
+	padding: 4px 8px 0 8px;
+}
+
+#racepane div.raceinfo span.calculate a {
+	display: block;
+	color: white;
+	font-variant: small-caps;
+	font-weight: bold;
+	width: 92px;
+	height: 18px;
+	padding: 2px 4px;
+	margin: 0 auto;
+	font-size: 15px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	background-image: url(/media/i/buttons/dark_100.png);
+	text-align: center;
+}
+
+#racepane div.raceinfo span.calculate a:hover {
+	background-image: url(/media/i/buttons/dark_100_over.png);
+}
+
+/* @end */
+
+
+/* @end */
+

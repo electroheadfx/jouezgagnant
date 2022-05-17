@@ -1,0 +1,1024 @@
+/* @group Admin */
+
+body#admin {
+/*	background: url(/media/i/bg/pmu.jpg); */
+}
+
+/* @group Admin Nav */
+
+#admin #content ul.admin_nav {
+	float: right;
+	margin: 0 0 20px 0;
+	overflow: hidden;
+}
+
+#admin #content ul.admin_nav li {
+	text-align: center;
+	border: 1px solid silver;
+	padding: 4px 2px 6px 2px;
+	margin: 0 4px;
+	float: left;
+	width: 60px;
+	overflow: hidden;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+}
+
+#admin #content ul.admin_nav li.selected {
+	border: 1px solid #c2231f;
+}
+#admin #content ul.admin_nav li.selected a {
+	color: #1C262B;
+}
+
+#admin #content ul.admin_nav li:hover {
+	background-color: #f0f0f0;
+}
+
+#admin #content ul.admin_nav li a {
+	font-size: 12px;
+	font-weight: bold;
+	color: #65B444;
+}
+
+#admin #content ul.admin_nav li a:hover {
+	background: transparent;
+	text-decoration: underline;
+}
+
+/* @end */
+
+/* @group actionbar */
+
+#admin div.actionbar {
+	overflow: hidden;
+	clear: both;
+	background-color: #CCDAE3;
+}
+
+#admin div.actionbar div.label {
+	float: left;
+	overflow: hidden;
+	height: 35px;
+	background-color: white;
+	-webkit-border-bottom-right-radius: 8px;
+	-moz-border-radius-bottomright: 8px;
+}
+
+#admin div.actionbar div.interior {
+	height: 35px;
+	background-color: white;
+}
+
+#admin div.actionbar div.interior div.actions {
+	height: 35px;
+	background-color: #CCDAE3;
+	overflow: hidden;
+	-webkit-border-top-left-radius: 8px;
+	-webkit-border-top-right-radius: 8px;
+	-moz-border-radius-topleft: 8px;
+	-moz-border-radius-topright: 8px;
+}
+
+#admin div.actionbar p#status_message {
+	display: none;
+	margin: 16px 8px;
+	font-size: 11px;
+	font-weight: bold;
+	color: #1C262B;
+	float: left;
+	overflow: hidden;
+	opacity: 0;
+}
+
+#admin div.actionbar a.create {
+	float: right;
+	display: block;
+	height: 14px;
+	width: 50px;
+	overflow: hidden;
+	padding: 4px 16px 2px 4px;
+	margin: 8px 8px;
+	font-weight: bold;
+	color: #65B444;
+	background: white url(/media/i/buttons/create_base.png) no-repeat right;
+	border: 1px solid #1C262B;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	font-size: 11px;
+}
+#admin div.actionbar a.create:hover {
+	color: white;
+	background: #65B444 url(/media/i/buttons/create_on.png) no-repeat right;
+}
+
+/* @end */
+
+/* @group titlebar */
+
+#admin div.titlebar {
+	overflow: hidden;
+	clear: both;
+	background-color: #CCDAE3;
+	-webkit-border-top-left-radius: 8px;
+	-webkit-border-bottom-left-radius: 8px;
+	-moz-border-radius-topleft: 8px;
+	-moz-border-radius-bottomleft: 8px;
+}
+
+#admin div.titlebar div.label {
+	width: 192px;
+	padding: 6px 4px;
+	height: 12px;
+	font-weight: bold;
+	float: left;
+	overflow: hidden;
+	font-size: 11px;
+}
+
+#admin div.titlebar div.interior {
+	background-color: #CCDAE3;
+}
+
+#admin div.titlebar div.interior div.title {
+	padding: 6px 0;
+	height: 12px;
+	text-align: center;
+	font-weight: bold;
+	float: left;
+	overflow: hidden;
+	font-size: 11px;
+	border-right: 1px dotted silver;
+}
+
+/* @end */
+
+/* @group datarow */
+
+#admin div.datarow {
+	font-size: 12px;
+	height: 24px;
+	overflow: visible;
+	clear: both;
+	-webkit-border-top-left-radius: 8px;
+	-webkit-border-bottom-left-radius: 8px;
+	-moz-border-radius-topleft: 8px;
+	-moz-border-radius-bottomleft: 8px;
+}
+
+#admin div.border {
+	width: 6px;
+	height: 24px;
+	overflow: hidden;
+	background-color: #CCDAE3;
+	float: left;
+}
+
+#admin div.datarow.odd {
+	background-color: #f4f4f4;
+}
+
+#admin div.datarow.even {
+	background-color: white;
+}
+
+#admin div.datarow:hover {
+	background-color: #e3eaee;
+}
+
+#admin div.datarow div.label {
+	text-align: right;
+	padding: 4px 4px 4px 0;
+	width: 196px;
+}
+
+#admin div.datarow div.label div.editbutton {
+	float: left;
+	height: 16px;
+	width: 16px;
+}
+
+#admin div.datarow div.label a {
+	display: block;
+	text-indent: 7000px;
+	height: 16px;
+	width: 16px;
+	overflow: hidden;
+	margin: 0 0 0 4px;
+	padding: 0;
+}
+
+#admin div.datarow div.label a.edit {
+	float: left;
+	background: url(/media/i/buttons/edit_base.png) no-repeat;
+}
+#admin div.datarow div.label a.edit:hover {
+	background-image: url(/media/i/buttons/edit_on.png);
+}
+
+#admin div.datarow div.label a.delete {
+	float: right;
+	background: url(/media/i/buttons/delete_base.png) no-repeat;
+}
+#admin div.datarow div.label a.delete:hover {
+	background-image: url(/media/i/buttons/delete_on.png);
+}
+
+#admin div.datarow div.label span {
+	display: block;
+	float: right;
+	margin-top: 2px;
+}
+
+#admin div.datarow div.data {
+	height: 12px;
+	padding: 6px 0;
+	text-align: center;
+	float: left;
+	overflow: hidden;
+	border-right: 1px solid silver;
+}
+
+#admin div.datarow div.data img {
+	margin: -2px 0 0 0;
+}
+
+#admin div.datarow div.additional {
+	position: relative;
+	z-index: 100;
+	left: 200px;
+	top: 0;
+	height: 28px;
+	overflow: hidden;
+	display: none;
+	width: 562px;
+	color: black;
+	clear: both;
+	background: url(/media/i/add_backlt.png) repeat-x;
+}
+
+#admin div.datarow:hover div.additional {
+	display: block;
+}
+
+#admin div.datarow div.additional div.add_data {
+	width: 540px;
+	height: 22px;
+	padding: 6px 0 0 10px;
+	float: left;
+	overflow: hidden;
+}
+
+#admin div.datarow div.additional div.add_data div.single_race {
+	margin: 0 20px 0 0;
+	height: 16px;
+	float: left;
+	overflow: hidden;
+}
+
+#admin div.datarow div.additional div.add_data div.single_race span.single_label {
+	font-size: 11px;
+	font-weight: bold;
+	color: #7f7f7f;
+}
+
+#admin div.datarow div.additional div.add_data div.single_race span.single_entry {
+}
+
+
+/* @end */
+
+/* @group bottom bars */
+
+#admin div.bottompad, #admin div.toppad {
+	height: 16px;
+	background-color: #CCDAE3;
+	overflow: hidden;
+	clear: both;
+}
+
+#admin div.toppad div.label {
+	height: 16px;
+	background-color: white;
+	-webkit-border-top-right-radius: 8px;
+	-moz-border-radius-topright: 8px;
+}
+
+#admin div.bottompad div.label {
+	background-color: white;
+	height: 16px;
+}
+
+#admin div.bottompad div.interior, #admin div.toppad div.interior {
+	height: 16px;
+	background-color: #CCDAE3;
+}
+
+#admin div.toppad div.topcurves {
+	height: 16px;
+	width: 550px;
+	float: left;
+	background-color: white;
+	-webkit-border-top-left-radius: 8px;
+	-webkit-border-top-right-radius: 8px;
+	-moz-border-radius-topleft: 8px;
+	-moz-border-radius-topright: 8px;
+}
+
+#admin div.bottompad div.bottomcurves {
+	height: 16px;
+	width: 550px;
+	float: left;
+	background-color: white;
+	-webkit-border-bottom-left-radius: 8px;
+	-webkit-border-bottom-right-radius: 8px;
+	-moz-border-radius-bottomleft: 8px;
+	-moz-border-radius-bottomright: 8px;
+}
+
+#admin div.bottompad div.border, #admin div.toppad div.border {
+	float: left;
+	height: 16px;
+	width: 6px;
+	background-color: #CCDAE3;
+}
+
+
+
+
+
+
+#admin div.bottombar {
+	height: 24px;
+	overflow: hidden;
+	clear: both;
+}
+
+#admin div.bottombar div.interior {
+	font-size: 10px;
+	font-weight: bold;
+	text-align: right;
+	height: 22px;
+	width: 554px;
+	padding: 2px 8px 0 0;
+	background-color: #CCDAE3;
+	-webkit-border-bottom-left-radius: 8px;
+	-webkit-border-bottom-right-radius: 8px;
+	-moz-border-radius-bottomleft: 8px;
+	-moz-border-radius-bottomright: 8px;
+}
+
+#admin div.bottombar div.jumpbar a {
+	display: block;
+	text-indent: 7000px;
+	height: 16px;
+	width: 16px;
+	overflow: hidden;
+	padding: 0;
+}
+
+#admin div.bottombar div.jumpbar div.count {
+	margin: 2px 0 0 0;
+	float: left;
+	overflow: hidden;
+}
+
+#admin div.bottombar div.jumpbar a.previous {
+	margin: 0 4px 0 0;
+	float: left;
+	background: url(/media/i/buttons/previous_base.png) no-repeat;
+}
+
+#admin div.bottombar div.jumpbar a.previousoff {
+	margin: 0 4px 0 0;
+	float: left;
+	background: url(/media/i/buttons/previous_disabled.png) no-repeat;
+}
+
+#admin div.bottombar div.jumpbar a.previous:hover {
+	background-image: url(/media/i/buttons/previous_on.png);
+}
+
+#admin div.bottombar div.jumpbar a.next {
+	margin: 0 0 0 4px;
+	float: right;
+	background: url(/media/i/buttons/next_base.png) no-repeat;
+}
+
+#admin div.bottombar div.jumpbar a.nextoff {
+	margin: 0 0 0 4px;
+	float: right;
+	background: url(/media/i/buttons/next_disabled.png) no-repeat;
+}
+
+#admin div.bottombar div.jumpbar a.next:hover {
+	background-image: url(/media/i/buttons/next_on.png);
+}
+
+
+
+/* @end */
+
+/* @group datepicker */
+
+#ui-datepicker-div {
+	padding: 4px;
+	width: 150px;
+	border: 1px solid silver;
+	background-color: white;
+	overflow: hidden;
+	clear: both;
+	font: bold 10px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	z-index: 1010;
+}
+
+#ui-datepicker-div a {
+	color: #1C262B;
+	font-size: 10px;
+	font-weight: bold;
+}
+
+#ui-datepicker-div a:hover {
+	color: #c2231f;
+	background-color: transparent;
+	text-decoration: underline;
+}
+
+#ui-datepicker-div div.ui-datepicker-control div.ui-datepicker-clear { float: left; }
+
+#ui-datepicker-div div.ui-datepicker-control div.ui-datepicker-close { float: right; }
+
+#ui-datepicker-div div.ui-datepicker-control div.ui-datepicker-clear a,
+#ui-datepicker-div div.ui-datepicker-control div.ui-datepicker-close a {
+	color: rgba(189,37,33,0.5);
+}
+#ui-datepicker-div div.ui-datepicker-control div.ui-datepicker-clear a:hover,
+#ui-datepicker-div div.ui-datepicker-control div.ui-datepicker-close a:hover {
+	color: #c2231f;
+}
+
+
+#ui-datepicker-div div.ui-datepicker-links {
+	width: 140px;
+	overflow: hidden;	
+	clear: both;
+	padding: 2px 0;
+}
+
+#ui-datepicker-div div.ui-datepicker-links div.ui-datepicker-prev {
+	width: 35px;
+	float: left;
+	overflow: hidden;
+}
+
+#ui-datepicker-div div.ui-datepicker-links div.ui-datepicker-current {
+	width: 70px;
+	float: left;
+	text-align: center;
+	overflow: hidden;
+}
+
+#ui-datepicker-div div.ui-datepicker-links div.ui-datepicker-next {
+	width: 35px;
+	text-align: right;
+	float: right;
+	overflow: hidden;
+}
+
+#ui-datepicker-div div.ui-datepicker-header {
+	text-align: center;
+	width: 140px;
+	padding: 4px 0;
+	clear: both;
+	overflow: hidden;
+}
+
+#ui-datepicker-div div.ui-datepicker-header select {
+	font: bold 10px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+#ui-datepicker-div div.ui-datepicker-header select.ui-datepicker-new-month { width: 75px; }
+#ui-datepicker-div div.ui-datepicker-header select.ui-datepicker-new-year { width: 60px; }
+
+#ui-datepicker-div table.ui-datepicker {
+	width: 140px;
+}
+
+#ui-datepicker-div tr.ui-datepicker-title-row {
+	padding: 2px 0;
+	border-top: 1px solid silver;
+	border-bottom: 1px solid silver;
+}
+
+#ui-datepicker-div tr.ui-datepicker-title-row a {
+	font-size: 10px;
+	font-weight: bold;
+}
+
+/* ui-datepicker-days-cell ui-datepicker-week-end-cell */
+
+#ui-datepicker-div div.ui-datepicker-status {
+	margin: 2px 0 0 0;
+	padding: 2px 0;
+	border-top: 1px solid silver;
+}
+
+#edit_detail img.ui-datepicker-trigger {
+	position: relative;
+	top: 3px;
+	left: 2px;
+}
+
+
+/* @end */
+
+/* @group time entry */
+
+.timeEntry_control {
+	vertical-align: middle;
+	margin-left: 2px;
+}
+* html .timeEntry_control { /* IE only */
+	margin-top: -4px;
+}
+
+/* @end */
+
+/* @group edit pane */
+
+#edit_detail {
+	position: absolute;
+	display: none;
+	width: 546px;
+	padding: 8px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	background: url(/media/i/screens/jg/50.png) repeat;
+	z-index: 999;
+}
+
+#edit_detail div.edit_content {
+	width: 526px;
+	padding: 8px;
+	border: 2px solid white;
+	background-color: #f0f0f0;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+}
+
+#edit_detail div.edit_content h4 {
+	float: left;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+#edit_detail div.edit_row {
+	margin: 8px 0;
+	overflow: hidden;
+	clear: both;
+}
+
+#edit_detail div.edit_row label {
+	width: 100px;
+	font-size: 11px;
+	background-color: white;
+	font-weight: bold;
+	text-align: right;
+	padding: 4px 8px 4px 0;
+	margin: 2px 0 0 0;
+	border-top: 1px dotted #65B444;
+	float: left;
+	overflow: hidden;
+}
+
+#edit_detail div.edit_row div.entry {
+	float: left;
+	padding: 0 0 4px 8px;
+	border-left: 1px dotted #65B444;
+	overflow: hidden;
+}
+
+#edit_detail div.edit_row div.entry input,
+#edit_detail div.edit_row div.entry textarea {
+	padding: 4px;
+	border: 1px dotted silver;
+}
+
+#edit_detail div.edit_row div.entry textarea {
+	width: 396px;
+	height: 250px;
+}
+
+#edit_detail div.submit_row {
+	overflow: hidden;
+	clear: both;
+}
+
+#edit_detail div.submit_row a.submit {
+	float: left;
+	display: block;
+	height: 14px;
+	width: 50px;
+	overflow: hidden;
+	margin: 0 0 0 120px;
+	padding: 4px 16px 2px 4px;
+	font-weight: bold;
+	color: #65B444;
+	background: white url(/media/i/buttons/create_base.png) no-repeat right;
+	border: 1px solid #1C262B;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	font-size: 11px;
+}
+#edit_detail div.submit_row a.submit:hover {
+	color: white;
+	background: #65B444 url(/media/i/buttons/create_on.png) no-repeat right;
+}
+
+#edit_detail div.submit_row a.cancel {
+	height: 16px;
+	width: 16px;
+	float: right;
+	text-indent: 7000px;
+	padding: 1px;
+	margin: 0;
+	background: url(/media/i/buttons/delete_base.png) no-repeat 1px 1px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+}
+#edit_detail div.submit_row a.cancel:hover {
+	background-color: #CCDAE3;
+	background-image: url(/media/i/buttons/delete_on.png);
+}
+
+
+/* @end */
+
+/* @end */
+
+
+
+/* @group race days */
+
+#race_days {
+	width: 762px;
+	margin: 0 auto;
+	overflow: hidden;
+	clear: both;
+}
+
+#race_days div.label {
+	width: 200px;
+	float: left;
+	overflow: hidden;
+	text-align: right;
+}
+
+#race_days div.interior {
+	width: 562px;
+	float: left;
+	overflow: hidden;
+}
+
+#race_days div.day { width: 149px; }
+
+#race_days div.pmu_open,
+#race_days div.pmu_close,
+#race_days div.open,
+#race_days div.close { width: 99px; }
+
+/* @group bottom bars */
+#admin div.bottombar div.jumpbar {
+	float: right;
+	overflow: hidden;
+	margin: 1px 0;
+	vertical-align: top;
+}
+
+#admin div.bottombar div.jumpbar input {
+	width: 75px;
+	height: 12px;
+	font-size: 10px;
+	background-color: #f4f4f4;
+	border: 1px solid silver;
+	padding: 2px 4px;
+	margin: 0 2px 0 0;
+	vertical-align: top;
+}
+/* @end */
+
+
+#race_days div.titlebar div.interior div.title.close {
+	border-right: 1px solid #CCDAE3;
+}
+
+#race_days div.datarow div.data.close {
+	width: 100px;
+	border: 0;
+}
+
+
+/* @end */
+
+/* @group races */
+
+#races {
+	width: 762px;
+	margin: 0 auto;
+	overflow: hidden;
+	clear: both;
+}
+
+#races div.label {
+	width: 200px;
+	float: left;
+	overflow: hidden;
+	text-align: right;
+}
+
+#races div.interior {
+	width: 562px;
+	float: left;
+	overflow: hidden;
+}
+
+#races div.date { width: 99px; }
+#races div.time { width: 149px; }
+#races div.spot { width: 139px; }
+
+#races div.pmu,
+#races div.race { width: 79px; }
+
+/* @group bottom bars */
+#admin div.bottombar div.jumpbar {
+	float: right;
+	overflow: hidden;
+	margin: 1px 0;
+	vertical-align: top;
+}
+
+#admin div.bottombar div.jumpbar input {
+	width: 75px;
+	height: 12px;
+	font-size: 10px;
+	background-color: #f4f4f4;
+	border: 1px solid silver;
+	padding: 2px 4px;
+	margin: 0 2px 0 0;
+	vertical-align: top;
+}
+/* @end */
+
+
+#races div.titlebar div.interior div.title.race {
+	border-right: 1px solid #CCDAE3;
+}
+
+#races .datarow .label.featured {
+	background: url(/media/i/featured.png) no-repeat 0 center;
+}
+
+#races div.datarow div.date {
+	width: 99px;
+}
+
+#races div.datarow div.data.race {
+	width: 80px;
+	border: 0;
+}
+
+#races div.datarow div.additional div.add_data div.single_race span.single_entry {
+	font-size: 12px;
+	font-weight: bold;
+}
+
+
+/* @end */
+
+/* @group pages */
+
+#pages {
+	width: 762px;
+	margin: 0 auto;
+	overflow: hidden;
+	clear: both;
+}
+
+#pages div.label {
+	width: 200px;
+	float: left;
+	overflow: hidden;
+	text-align: right;
+}
+
+#pages div.interior {
+	width: 562px;
+	float: left;
+	overflow: hidden;
+}
+
+#pages div.active,
+#pages div.language { width: 59px; }
+#pages div.content { width: 329px; }
+#pages div.updated { width: 99px; }
+
+#pages div.datarow div.data.content {
+	text-align: left;
+	padding-left: 4px;
+	width: 325px;
+}
+
+#pages div.datarow div.data.updated {
+	width: 100px;
+	border: 0;
+}
+
+#pages div.titlebar div.interior div.title.updated {
+	border-right: 1px solid #CCDAE3;
+}
+
+/* @end */
+
+/* @group accounts */
+
+#accounts {
+	width: 762px;
+	margin: 0 auto;
+	overflow: hidden;
+	clear: both;
+}
+
+#accounts div.label {
+	width: 200px;
+	float: left;
+	overflow: hidden;
+	text-align: right;
+}
+
+#accounts div.interior {
+	width: 562px;
+	float: left;
+	overflow: hidden;
+}
+
+#accounts div.email { width: 239px; }
+#accounts div.name { width: 169px; }
+#accounts div.active { width: 49px; }
+
+#accounts div.postal { display: none; }
+#accounts div.birth { width: 89px; }
+
+#accounts div.titlebar div.interior div.title.birth {
+	border-right: 1px solid #CCDAE3;
+}
+
+#accounts div.datarow div.data.birth {
+	width: 90px;
+	padding: 4px 0;
+	border: 0;
+}
+
+
+/* @end */
+
+
+
+/* @group orders */
+
+#orders {
+	width: 762px;
+	margin: 0 auto;
+	overflow: hidden;
+	clear: both;
+}
+
+#orders div.label {
+	width: 200px;
+	float: left;
+	overflow: hidden;
+	text-align: right;
+}
+
+#orders div.interior {
+	width: 562px;
+	float: left;
+	overflow: hidden;
+}
+
+#orders div.user { width: 299px; }
+#orders div.date { width: 109px; }
+#orders div.amount { width: 89px; }
+#orders div.status { width: 49px; }
+
+#orders div.titlebar div.interior div.title.status {
+	border-right: 1px solid #CCDAE3;
+}
+
+#orders div.datarow div.data.status {
+	width: 50px;
+	padding: 6px 0;
+	border: 0;
+}
+
+
+/* @end */
+
+
+/* @group media */
+
+#media {
+	width: 762px;
+	margin: 0 auto;
+	overflow: visible;
+	clear: both;
+}
+
+#media div.label {
+	width: 200px;
+	float: left;
+	overflow: hidden;
+	text-align: right;
+}
+
+#media div.interior {
+	width: 562px;
+	float: left;
+	overflow: hidden;
+}
+
+#media div.path { width: 389px; }
+#media div.type { width: 69px; }
+#media div.uploaded { width: 89px; }
+
+#media div.titlebar div.interior div.title.uploaded {
+	border-right: 1px solid #CCDAE3;
+}
+
+#media div.datarow div.data.uploaded {
+	width: 90px;
+	padding: 6px 0;
+	border: 0;
+}
+
+#admin div.datarow div.additional_thumb {
+	height: auto;
+	overflow: hidden;
+	position: relative;
+	z-index: 100;
+	left: 200px;
+	top: 0;
+	display: none;
+	width: 542px;
+	padding: 4px 10px;
+	color: black;
+	clear: both;
+	background: url(/media/i/add_backall.png) repeat-y;
+}
+
+#admin div.datarow:hover div.additional_thumb {
+	display: block;
+}
+
+
+#admin div.datarow div.additional_thumb div.thumb_display {
+	max-width: 540px;
+	float: left;
+	overflow: hidden;
+	border: 1px solid silver;
+	background-color: white;
+}
+
+
+#admin div.datarow div.thumb_shadow {
+	display: none;
+	position: relative;
+	z-index: 100;
+	left: 200px;
+	top: 0;
+	width: 562px;
+	height: 10px;
+	background: url(/media/i/add_shadow.png) repeat-x;
+}
+
+
+#admin div.datarow:hover div.thumb_shadow {
+	display: block;
+}
+
+
+
+/* @end */
+
+
+
+
+sup {
+	position: relative;
+	top: -4px;
+	font-size: 9px;
+	font-weight: bold;
+}
+
+
+
+

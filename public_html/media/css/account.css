@@ -1,0 +1,537 @@
+#content {
+	font: 14px "Arial Rounded MT Bold", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font-weight: bold;
+}
+
+#content p {
+	margin-left: 40px;
+	line-height: 20px;
+}
+
+/* @group login */
+
+#login_pane {
+	width: 546px;
+	padding: 8px;
+	overflow: hidden;
+	margin: 0 auto;
+	margin-top: 10px;
+	margin-bottom: 30px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	background: url(/media/i/screens/jg/50.png) repeat;
+}
+
+#login_pane div.login_window {
+	width: 526px;
+	padding: 8px;
+	border: 2px solid white;
+	background-color: #f0f0f0;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+}
+
+body#create #login_pane div.login_window h4,
+body#login #login_pane div.login_window h4 {
+	float: left;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+
+/* @group jg-style table */
+
+#login_pane div.login_window div.labels {
+	float: left;
+	width: 35%;
+	padding: 8px 0 8px 0;
+	overflow: hidden;
+}
+
+#login_pane div.login_window div.interior {
+	width: 65%;
+	float: left;
+	overflow: hidden;
+	background-color: white;
+	padding: 8px 0;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+}
+
+#login_pane div.login_window div.labels div.cell {
+	width: 96%;
+	padding: 12px 0 4px 0;
+	height: 22px;
+	text-align: right;
+	float: left;
+	clear: both;
+	overflow: hidden;
+}
+
+#login_pane div.login_window div.interior div.data {
+	clear: both;
+	padding: 4px 0 4px 10px;
+	overflow: hidden;
+}
+
+#login_pane div.login_window div.after {
+	margin-bottom: 20px;
+}
+
+#login_pane div.login_window div.interior div.cell {
+	width: 90%;
+	height: 30px;
+	padding: 0;
+	text-align: left;
+	float: left;
+}
+
+#login_pane div.login_window div.interior div.cell input {
+	width: 200px;
+	font-size: 14px;
+	padding: 4px;
+	border: 1px dotted silver;
+}
+
+#login_pane div.login_window div.interior div.cell input.small {
+	width: 75px;
+}
+
+#login_pane div.login_window div.interior div.cell input#login_submit {
+	font: small-caps 14px "Arial Rounded MT Bold", "Myriad Pro", Arial, "Helvetica Neue", Helvetica, Geneva, sans-serif;
+	display: block;
+	text-align: center;
+	overflow: hidden;
+	width: 70px;
+	border: 1px solid #1C262B;
+	height: 20px;
+	color: white;
+	margin: 0 0 0 2px;
+	padding: 0;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	background-image: url(/media/i/home/blue_off.gif);
+}
+#login_pane div.login_window div.interior div.cell input#login_submit:hover {
+	background-image: url(/media/i/home/blue_on.gif);
+	background-color: #1C262B;
+}
+
+
+/* @end */
+
+#login_pane div.login_window div.bottom {
+	font-size: 12px;
+	overflow: hidden;
+	clear: both;
+}
+
+#login_pane div.login_window div.bottom div.label_push {
+	float: left;
+	width: 35%;
+	overflow: hidden;
+}
+
+#login_pane div.login_window div.bottom div.bottom_note {
+	float: left;
+	padding: 6px 0 0 10px;
+}
+
+/* @end */
+
+
+
+
+/* @group account main */
+
+#account_pane {
+	width: 860px;
+	margin: 20px auto;
+	overflow: hidden;
+	clear: both;
+	padding: 0;
+}
+
+h4.window_title {
+	text-align: left;
+	font-size: 12px;
+	clear: both;
+	border-bottom: 1px dashed rgba(28,38,43,0.75);
+	padding-bottom: 2px;
+	margin-bottom: 10px;
+}
+
+#credit_pane {
+	width: 472px;
+	margin: 0 10px 0 0;
+	padding: 8px;
+	overflow: hidden;
+	float: left;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	background: url(/media/i/screens/jg/50.png) repeat;
+}
+
+#credit_pane div.credit_window {
+	width: 452px;
+	padding: 8px;
+	border: 2px solid white;
+	background-color: #f0f0f0;
+	overflow: hidden;
+	clear: both;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+}
+
+#info_pane {
+	width: 346px;
+	padding: 8px;
+	overflow: hidden;
+	float: left;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	background: url(/media/i/screens/jg/50.png) repeat;
+}
+
+#info_pane div.info_window {
+	width: 326px;
+	padding: 8px;
+	border: 2px solid white;
+	background-color: #f0f0f0;
+	overflow: hidden;
+	clear: both;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+}
+
+/* @group info pane */
+
+#info_pane div.info_window div.labels {
+	float: left;
+	width: 35%;
+	padding: 8px 0 8px 0;
+	overflow: hidden;
+	font-size: 12px;
+}
+
+#info_pane div.info_window div.interior {
+	width: 65%;
+	float: left;
+	overflow: hidden;
+	background-color: white;
+	padding: 8px 0;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+}
+
+#info_pane div.info_window div.labels div.cell {
+	width: 96%;
+	padding: 6px 0 4px 0;
+	height: 16px;
+	text-align: right;
+	float: left;
+	clear: both;
+	overflow: hidden;
+}
+
+#info_pane div.info_window div.interior div.data {
+	clear: both;
+	padding: 6px 0 4px 10px;
+	overflow: hidden;
+}
+
+#info_pane div.info_window div.after {
+	margin-bottom: 20px;
+}
+
+#info_pane div.info_window div.interior div.cell {
+	height: 16px;
+	width: 90%;
+	padding: 0;
+	text-align: left;
+	float: left;
+	font: 12px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+
+
+/* @end */
+
+#info_pane div.info_window div.bottom {
+	font-size: 12px;
+	overflow: hidden;
+	clear: both;
+}
+
+#info_pane div.info_window div.bottom div.label_push {
+	float: left;
+	width: 35%;
+	overflow: hidden;
+}
+
+#info_pane div.info_window div.bottom div.bottom_note {
+	float: left;
+	padding: 6px 0 0 10px;
+}
+
+/* @group credit pane */
+
+#credit_pane .pane_head {
+	overflow: hidden;
+	clear: both;
+}
+
+#credit_pane .pane_head .pane_item {
+	font-size: 12px;
+	width: 200px;
+	padding: 2px 4px;
+	background-color: white;
+	border: 1px dotted silver;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+}
+#credit_pane .pane_head .pane_item.primary {
+	float: left;
+}
+#credit_pane .pane_head .pane_item.secondary {
+	float: right;
+}
+
+#credit_pane .pane_list {
+	font-size: 12px;
+	margin: 4px 0;
+	padding: 4px 4px 10px 4px ;
+	background-color: white;
+	border: 1px dotted silver;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	overflow: hidden;
+	clear: both;
+}
+
+#credit_pane .pane_list h3 {
+	border-bottom: 1px dotted silver;
+	padding: 0 0 0 6px;
+	margin: 0 0 4px 0;
+}
+
+/* 452 */
+
+#credit_pane .pane_list .row {
+	overflow: hidden;
+	clear: both;
+	padding: 2px 4px;
+}
+
+#credit_pane .pane_list .row div {
+	padding: 0 4px;
+	float: left;
+}
+
+#credit_pane .pane_list .row.odd {
+	background-color: #f7f7f7;
+}
+
+#credit_pane .pane_list.credits_spent .row .label,
+#credit_pane .pane_list.credits_open .row .label {
+	color: silver;
+	width: 49px;
+}
+
+#credit_pane .pane_list.credits_open .row .count {
+	width: 49px;
+}
+
+#credit_pane .pane_list .row .credits {
+	width: 79px;
+}
+
+#credit_pane .pane_list.credits_spent .row .expires,
+#credit_pane .pane_list.credits_spent .row .used,
+#credit_pane .pane_list.credits_open .row .expires {
+	width: 149px;
+}
+
+
+#credit_pane .pane_list.orders .row .date { width: 149px; }
+
+#credit_pane .pane_list.orders .row .amount,
+#credit_pane .pane_list.orders .row .status,
+#credit_pane .pane_list.orders .row .credits {
+	width: 79px;
+}
+
+#credit_pane .pane_list.orders .row .title {
+	text-align: center;
+}
+
+#credit_pane .pane_list .row .data {
+	font: 12px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+#credit_pane .pane_list.orders .row .data.amount {
+	text-align: right;
+}
+
+#credit_pane .pane_list.orders .row .data.status,
+#credit_pane .pane_list.orders .row .data.credits {
+	text-align: center;
+}
+
+
+
+/* @end */
+
+#account_pane .actions {
+	width: 346px;
+	padding: 8px;
+	overflow: hidden;
+	float: right;
+}
+
+#account_pane .actions a {
+	margin: 20px auto;
+}
+
+/* @end */
+
+/* @group confirmation */
+
+#confirm .full_block {
+	width: 722px;
+	margin: 40px auto;
+	overflow: hidden;
+	clear: both;
+}
+
+#confirm .full_block .spplus_window {
+	float: left;
+}
+
+#confirm_pane {
+	width: 546px;
+	padding: 8px;
+	overflow: hidden;
+	margin: 0 5px 0 0;
+	float: left;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	background: url(/media/i/screens/jg/50.png) repeat;
+}
+
+#confirm_pane .confirm_window {
+	width: 526px;
+	padding: 8px;
+	border: 2px solid white;
+	background-color: #f0f0f0;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+}
+
+/* @group jg-style table */
+
+#confirm_pane .confirm_window div.labels {
+	float: left;
+	width: 35%;
+	padding: 8px 0 8px 0;
+	overflow: hidden;
+}
+
+#confirm_pane .confirm_window div.interior {
+	width: 65%;
+	float: left;
+	overflow: hidden;
+	background-color: white;
+	padding: 8px 0;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+}
+
+#confirm_pane .confirm_window div.labels div.cell {
+	width: 96%;
+	padding: 12px 0 4px 0;
+	height: 22px;
+	text-align: right;
+	float: left;
+	clear: both;
+	overflow: hidden;
+}
+
+#confirm_pane .confirm_window div.interior div.data {
+	clear: both;
+	padding: 4px 0 4px 10px;
+	overflow: hidden;
+}
+
+#confirm_pane .confirm_window div.after {
+	margin-bottom: 20px;
+}
+
+#confirm_pane .confirm_window div.interior div.cell {
+	width: 90%;
+	height: 30px;
+	padding: 0;
+	text-align: left;
+	float: left;
+}
+
+#confirm_pane .confirm_window div.interior div.cell input {
+	width: 200px;
+	font-size: 14px;
+	padding: 4px;
+	border: 1px dotted silver;
+}
+
+#confirm_pane .confirm_window div.interior div.cell input.small {
+	width: 75px;
+}
+
+#confirm_pane .confirm_window div.interior div.cell input#login_submit {
+	font: small-caps 14px "Arial Rounded MT Bold", "Myriad Pro", Arial, "Helvetica Neue", Helvetica, Geneva, sans-serif;
+	display: block;
+	text-align: center;
+	overflow: hidden;
+	width: 70px;
+	border: 1px solid #1C262B;
+	height: 20px;
+	color: white;
+	margin: 0 0 0 2px;
+	padding: 0;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	background-image: url(/media/i/home/blue_off.gif);
+}
+#confirm_pane .confirm_window div.interior div.cell input#login_submit:hover {
+	background-image: url(/media/i/home/blue_on.gif);
+	background-color: #1C262B;
+}
+
+
+/* @end */
+
+#confirm_pane .confirm_window div.bottom {
+	font-size: 12px;
+	overflow: hidden;
+	clear: both;
+}
+
+#confirm_pane .confirm_window div.bottom div.label_push {
+	float: left;
+	width: 35%;
+	overflow: hidden;
+}
+
+#confirm_pane .confirm_window div.bottom div.bottom_note {
+	float: left;
+	padding: 6px 0 0 10px;
+}
+#confirm_pane div.login_window div.interior div.data {
+	clear: both;
+	height: 22px;
+	padding: 12px 0 4px 10px;
+	overflow: hidden;
+}
+
+
+/* @end */
+

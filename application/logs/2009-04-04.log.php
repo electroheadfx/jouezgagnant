@@ -1,0 +1,6 @@
+<?php defined('SYSPATH') or die('No direct script access.'); ?>
+
+2009-04-04 08:27:28 +02:00 --- error: Uncaught PHP Error: mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Can't connect to local MySQL server through socket '/tmp/mysql.sock' (2) dans le fichier /Users/lolopro/Development/jouezgagnant/system/libraries/drivers/Database/Mysql.php à la ligne 61
+2009-04-04 12:29:32 +02:00 --- error: Uncaught PHP Error: mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Can't connect to local MySQL server through socket '/tmp/mysql.sock' (2) dans le fichier /Users/lolopro/Development/jouezgagnant/system/libraries/drivers/Database/Mysql.php à la ligne 61
+2009-04-04 14:02:39 +02:00 --- error: Uncaught PHP Error: mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Can't connect to local MySQL server through socket '/tmp/mysql.sock' (2) dans le fichier /Users/lolopro/Development/jouezgagnant/system/libraries/drivers/Database/Mysql.php à la ligne 61
+2009-04-04 21:02:26 +02:00 --- error: Uncaught PHP Error: mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Can't connect to local MySQL server through socket '/tmp/mysql.sock' (2) dans le fichier /Users/lolopro/Development/jouezgagnant/system/libraries/drivers/Database/Mysql.php à la ligne 61

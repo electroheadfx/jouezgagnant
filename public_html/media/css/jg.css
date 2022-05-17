@@ -1,0 +1,774 @@
+/* @group Reset v1.0 | 20080212 */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body { line-height: 1; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus { outline: 0; }
+
+/* remember to highlight inserts somehow! */
+ins { text-decoration: none; }
+del { text-decoration: line-through; }
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* @end */
+
+/* @group Content Containers */
+
+body {
+	background: #1C262B url(/media/i/screens/jg/25.png) repeat;
+	font-family: "Arial Rounded MT Bold", "Myriad Pro", Arial, "Helvetica Neue", Helvetica, Geneva, sans-serif;
+	font-weight: bold;
+}
+
+body.light {
+	background-color: white;
+	color: #1C262B;
+}
+
+input {
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+
+.logo {
+	font-style: italic;
+}
+
+.midBlue {
+	color: #1C262B;
+}
+
+.midRed {
+	color: #C2231F;
+}
+
+.midGreen {
+	color: #65B444;
+}
+
+
+
+
+/* @group Head */
+
+h1 {
+	float: left;
+	color: #FFFFFF;
+	font: 42px "Arial Rounded MT Bold", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	padding: 4px 20px;
+}
+
+h1.off {
+	position: absolute;
+	top: -100px;
+	left: -250px;
+}
+
+#head {
+	overflow: hidden;
+	background: url(/media/i/head_back.png) no-repeat;
+	background-color: #77868d;
+}
+
+#logo {
+	float: left;
+	padding: 0;
+}
+
+#authenticate {
+	float: right;
+	display: block;
+	background: #CCDAE3 url(/media/i/white_fade40.png) repeat-x;
+	margin: 10px;
+	padding: 8px;
+	border: 2px solid #65B444;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+}
+
+ul.entry li {
+	float: left;
+	overflow: hidden;
+}
+
+
+#navigation {
+	clear: both;
+	border-top: 3px solid #65B444;
+	background-color: white;
+	overflow: hidden;
+	padding: 0 10px;
+}
+
+ul.menu li {
+	display: block;
+	float: left;
+	padding: 6px 8px;
+	margin-right: 2px;
+	background-color: #1C262B;
+	color: #CCDAE3;
+	font: 13px "Arial Rounded MT Bold", "Myriad Pro";
+	-webkit-border-bottom-left-radius: 8px;
+	-webkit-border-bottom-right-radius: 8px;
+	-moz-border-radius-bottomleft: 8px;
+	-moz-border-radius-bottomright: 8px;
+}
+
+ul.menu a {
+	color: #CCDAE3;
+}
+
+
+ul.menu li.menuon, ul.menu li.menuon:hover {
+	padding: inherit 20px;
+	background-color: #65B444;
+	color: #1C262B;
+}
+
+ul.menu li.menuon a, ul.menu li.menuon:hover a, ul.menu li.menuon a:hover {
+	color: #1C262B;
+}
+
+
+ul.menu li:hover {
+	color: #C2231F;
+	background-color: #c1d8b8;
+}
+
+ul.menu li:hover a {
+	color: #C2231F;
+}
+
+ul.menu li.contact,
+ul.menu li.logout {
+	float: right;
+}
+
+ul.menu li.admin {
+	float: right;
+}
+
+a.menuitem {
+	color: #1C262B;
+	padding: 0;
+	
+}
+
+a.menuitem:hover {
+	background-color: transparent;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+}
+
+
+/* @end */
+
+/* @group index */
+
+#promo {
+	width: 800px;
+	height: 700px;
+	margin: 40px auto;
+	background: url(/media/i/home_back.jpg) no-repeat;
+}
+
+#promo h2 {
+	font: 16px "Arial Rounded MT Bold", "Myriad Pro", Arial, "Helvetica Neue", Helvetica, Geneva, sans-serif;
+	color: #1C262B;
+}
+
+#promo h2.lead {
+	width: 450px;
+	margin: 20px 0 0 0;
+	line-height: 20px;
+}
+
+#promo img.tail {
+	margin: 380px 0 0 0;
+}
+
+#promo h2.tail {
+	text-align: center;
+	margin: 40px 0 0 0;
+}
+
+#promo a {
+	font: 16px "Arial Rounded MT Bold", "Myriad Pro", Arial, "Helvetica Neue", Helvetica, Geneva, sans-serif;
+	color: #1C262B;
+}
+
+#promo a:hover {
+	background: none;
+	text-decoration: underline;
+}
+
+/* @end */
+
+
+
+/* @group Content */
+
+#content h2 {
+	font: 16px "Arial Rounded MT Bold", "Myriad Pro", Arial, "Helvetica Neue", Helvetica, Geneva, sans-serif;
+	color: #1C262B;
+	width: 860px;
+	margin: 20px auto 10px auto;
+	padding: 0 0 4px 0;
+	border-bottom: 2px dotted rgba(28,38,43,0.5);
+}
+
+#content {
+	padding: 10px;
+	min-height: 250px;
+	background-color: white;
+	font-size: 14px;
+}
+
+div.pages_container {
+	padding: 10px;
+	background-color: white;
+}
+
+/* @group Subscriptions */
+
+#content p.sidenote {
+	width: 860px;
+	text-align: right;
+	font: 11px/1.5em "Arial Rounded MT Bold", "Myriad Pro", Arial, "Helvetica Neue", Helvetica, Geneva, sans-serif;
+	margin: 20px auto -40px auto;
+}
+
+#content p.text {
+	font: 12px/1.5em "Arial Rounded MT Bold", "Myriad Pro", Arial, "Helvetica Neue", Helvetica, Geneva, sans-serif;
+	width: 840px;
+	margin: 10px auto 20px auto;
+	padding: 0 10px;
+}
+
+#content p.greenNote {
+	font: 14px/1.5em "Arial Rounded MT Bold", "Myriad Pro", Arial, "Helvetica Neue", Helvetica, Geneva, sans-serif;
+	width: 840px;
+	margin: 30px auto 20px auto;
+	padding: 0 10px;
+	color: #65B444;
+}
+
+#content p.redNote {
+	font: 14px/1.5em "Arial Rounded MT Bold", "Myriad Pro", Arial, "Helvetica Neue", Helvetica, Geneva, sans-serif;
+	width: 840px;
+	margin: 30px auto 20px auto;
+	padding: 0 10px;
+	color: #C2231F;
+}
+
+#subscribe .full_block {
+	width: 760px;
+	margin: 0 auto;
+	overflow: hidden;
+	clear: both;
+}
+
+#subscribe .full_block .spplus_window {
+	float: left;
+}
+
+ul.table {
+	width: 600px;
+	float: left;
+	margin: 0 5px 0 0;
+}
+
+ul.table li {
+	clear: both;
+	margin: 4px 0;
+	padding: 4px 0;
+	overflow: hidden;
+}
+
+ul.table li.even {
+	background-color: whitesmoke;
+}
+
+ul.table span {
+	display: block;
+	float: left;
+	height: 20px;
+	padding: 2px 6px;
+	margin-right: 8px;
+	border-right: 1px solid #CCDAE3;
+	font-size: 13px;
+}
+
+ul.table span.label {
+	font: 12px "Arial Rounded MT Bold", "Myriad Pro", Arial, "Helvetica Neue", Helvetica, Geneva, sans-serif;
+	width: 80px;
+}
+
+ul.table span.notes {
+	width: 320px;
+}
+
+ul.table span.rate {
+	text-align: right;
+	width: 50px;
+}
+
+ul.table span.purchase {
+	border-right: none;
+}
+
+ul.table span.purchase a {
+	color: white;
+	font-variant: small-caps;
+	float: left;
+	width: 52px;
+	height: 16px;
+	padding: 3px 4px;
+	margin: 0;
+	font-size: 14px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	background-image: url(/media/i/buttons/dark_60.png);
+	text-align: center;
+}
+
+ul.table span.purchase a:hover {
+	color: #65B444;
+}
+
+/* @end */
+
+
+
+ul.pagelist {
+	margin: 10px 0 0 40px;
+	list-style-type: square;
+}
+
+/* @end */
+
+
+/* @group Foot */
+
+#foot {
+	font: 14px "Arial Rounded MT Bold", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font-weight: bold;
+	border-top: 2px solid #65B444;
+	background: #CCDAE3 url(/media/i/screens/jg/25.png) repeat;
+	padding: 10px;
+	height: 80px;
+	overflow: hidden;
+	clear: both;
+}
+
+#foot div.footc {
+	color: #1C262B;
+	width: 500px;
+	text-align: center;
+	margin: 2px auto;
+	font-size: 11px;
+	overflow: visible;
+}
+
+#foot div.footc li {
+	clear: both;
+	padding: 4px 0;
+	text-transform: lowercase;
+}
+
+#foot div.footc a {
+	font-size: 11px;
+}
+
+
+/* @end */
+
+
+/* @end */
+
+
+/* @group Forms & Input */
+
+a {
+	color: #C2231F;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+input {
+	border: 0;
+	padding: 2px 0;
+}
+
+
+/* @end */
+
+/* @group pmu pane */
+
+#pmu_pane {
+	padding: 0;
+	margin: 20px auto;
+	overflow: hidden;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	width: 998px;
+	height: 560px;
+}
+
+#pmu_pane #info_handle,
+#pmu_pane #today_handle,
+#pmu_pane #pmu_handle {
+	float: right;
+	margin: 0;
+	height: 16px;
+	text-align: left;
+	padding: 4px 12px 0 12px;
+	overflow: hidden;
+	-webkit-border-top-right-radius: 8px;
+	-webkit-border-top-left-radius: 8px;
+	-moz-border-radius-topright: 8px;
+	-moz-border-radius-topleft: 8px;
+}
+
+#pmu_pane #info_handle {
+	margin-right: 180px;
+}
+#pmu_pane #today_handle,
+#pmu_pane #pmu_handle {
+	margin-right: 2px;
+}
+
+#pmu_pane a {
+	cursor: pointer;
+	overflow: hidden;
+	color: white;
+}
+
+#pmu_pane div.button.on {
+	background: #1C262B;
+}
+
+#pmu_pane div.button.off {
+	background: #8598A0;
+}
+#pmu_pane div.button.off:hover {
+	background: #1C262B;
+}
+
+
+
+#pmu_pane div.pmu_container {
+	padding: 4px;
+	width: 990px;
+	height: 532px;
+	overflow: hidden;
+	background-color: #1C262B;
+	clear: both;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+}
+
+/* @group how to container */
+
+#pmu_pane #info_display {
+	display: block;
+}
+
+#pmu_pane div.pmu_container div.how_frame,
+#pmu_pane div.pmu_container div.today_frame {
+	background-color: white;
+	width: 970px;
+	height: 512px;
+	padding: 10px;
+	overflow: auto;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+}
+
+#pmu_pane #info_display div.how_row {
+	padding: 10px 0;
+	overflow: hidden;
+	clear: both;
+	border-bottom: 2px dotted rgba(28, 38, 43, 0.5);
+}
+
+#pmu_pane #info_display div.how_row.last {
+	border-bottom: none;
+}
+
+#pmu_pane #info_display div.how_item {
+	float: left;
+	width: 50%;
+}
+
+#pmu_pane #info_display div.how_item div.how_step {
+	width: 95px;
+	text-align: center;
+	float: left;
+	overflow: hidden;
+}
+
+#pmu_pane #info_display div.how_item div.how_step div.number {
+	font-size: 60px;
+	color: #CCDAE3;
+}
+
+#pmu_pane #info_display div.how_item div.how_step div.label {
+	padding: 4px 2px;
+	color: #65B444;
+	background-color: #CCDAE3;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+}
+
+#pmu_pane #info_display div.how_item div.how_info {
+	width: 351px;
+	padding: 0 4px 0 20px;
+	float: left;
+	overflow: hidden;
+}
+
+#pmu_pane #info_display div.how_item div.how_info div.desc {
+	line-height: 1.5em;
+	font-size: 13px;
+}
+
+#pmu_pane #info_display div.how_item div.how_info div.desc img {
+	float: left;
+	margin: 0 10px 10px 0;
+}
+
+#pmu_pane #info_display div.how_item div.how_info div.desc img.tall {
+	float: left;
+	margin: 0 10px 20px 0;
+}
+
+#pmu_pane #info_display div.how_item div.how_info div.image {
+	padding: 0;
+	overflow: hidden;
+	clear: both;
+}
+
+
+/* @end */
+
+/* @group pmu frame */
+
+#pmu_pane #pmu_display {
+	display: none;
+}
+
+#pmu_pane div.pmu_container div.pmu_frame {
+	background-color: white;
+}
+
+/* @end */
+
+
+
+/* @end */
+
+
+/* @group buttons */
+
+a.redButton, a.blueButton, a.greenButton {
+	font: small-caps 14px "Arial Rounded MT Bold", "Myriad Pro", Arial, "Helvetica Neue", Helvetica, Geneva, sans-serif;
+	display: block;
+	text-align: center;
+	overflow: hidden;
+	width: 70px;
+	border: 1px solid #1C262B;
+	height: 20px;
+	color: white;
+	margin: 0 0 0 5px;
+	padding: 0 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+}
+a.redButton {
+	background-image: url(/media/i/home/red_off.gif);
+}
+a.redButton:hover {
+	color: #1C262B;
+	background-image: url(/media/i/home/red_on.gif);
+	background-color: #C2231F;
+}
+a.blueButton {
+	background-image: url(/media/i/home/blue_off.gif);
+}
+a.blueButton:hover {
+	background-image: url(/media/i/home/blue_on.gif);
+	background-color: #1C262B;
+}
+a.greenButton {
+	background-image: url(/media/i/home/green_off.gif);
+}
+a.greenButton:hover {
+	color: #1C262B;
+	background-image: url(/media/i/home/green_on.gif);
+	background-color: #65B444;
+}
+
+a.medium {
+	width: 120px;
+}
+
+a.wide {
+	width: 180px;
+}
+
+a.right {
+	float: right;
+}
+
+
+/* @end */
+
+/* @group agreement */
+
+#agreement #navigation {
+	display: none;
+}
+
+#agreement #content {
+	border-top: 2px solid #65B444;
+}
+
+#agreement div.scrollText {
+	width: 836px;
+	height: 400px;
+	margin: 0 auto 20px auto;
+	overflow: auto;
+	padding: 10px;
+	border: 2px solid #65B444;
+}
+
+#agreement div.scrollText p {
+	margin: 10px 0;
+	font: 12px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+#agreement div.confirmation {
+	width: 860px;
+	margin: 0 auto 20px auto;
+	overflow: hidden;
+	clear: both;
+	text-align: right;
+}
+
+#agreement div.confirmation p.agreement {
+	margin: 0 0 10px 0;
+	font: bold 12px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+.center {
+	text-align: center;
+}
+
+
+/* @end */
+
+/* @group Error Pane */
+
+div#error_pane {
+	position: absolute;
+	width: 340px;
+	top: 20px;
+	right: 20px;
+	z-index: 1100;
+	padding: 8px;
+	background-image: url(/media/i/screens/black/50.png);
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+}
+
+div#error_pane div.error_messages {
+	background-color: #C2231F;
+	padding: 2px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	overflow: hidden;
+	clear: both;
+}
+
+div#error_pane div.error_messages .error_head {
+	font-size: 12px;
+	padding: 4px 8px;
+	color: white;
+}
+
+div#error_pane div.error_messages ul.error_list {
+	background-color: white;
+	overflow: hidden;
+	padding: 4px;
+	clear: both;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+}
+
+div#error_pane div.error_messages ul.error_list li {
+	font: bold 12px "Helvetica Neue", "Myriad Pro", Arial, Helvetica, Geneva, sans-serif;
+	margin: 2px 0 2px 6px;
+}
+
+/* @end */
+
+div.code {
+	font: 11px Monaco, "Courier New", Courier, mono;
+	white-space: pre;
+}
+
+
+#screen {
+	width: 200px;
+	height: 200px;
+	display: none;
+	background: url(/media/i/screens/black/75.png) repeat;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 100;
+}
+
+
+/* @group Color Theme */
+
+.rust {	background-color: #C2231F; } /* C2231F */
+.mint {	background-color: #65B444; } /* 65B444 */
+.pale {	background-color: #FFFFFF; } /* FFFFFF */
+.lite {	background-color: #CCDAE3; } /* CCDAE3 */
+.deep {	background-color: #1C262B; } /* 1C262B */
+
+/* @end */

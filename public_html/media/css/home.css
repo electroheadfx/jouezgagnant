@@ -1,0 +1,739 @@
+/* @group Home */
+
+#home_pane {
+	padding: 10px;
+	min-height: 250px;
+	background-color: white;
+	font-size: 18px;
+	overflow: hidden;
+	clear: both;
+	border-top: 2px solid #65B444;
+}
+
+/* @group headers */
+
+#home_pane h2.hilite {
+	font: 21px "Arial Rounded MT Bold", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #C2231F;
+	text-align: center;
+	border: none;
+	margin: 10px 0 0 0;
+}
+
+#home_pane h3.focus {
+	color: #65B444;
+	font: 18px "Arial Rounded MT Bold", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	text-align: center;
+	margin: 10px 0;
+}
+
+#home_pane h3.text {
+	color: #1C262B;
+	font: 14px "Arial Rounded MT Bold", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	text-align: center;
+	margin: 10px 0;
+}
+
+#home_pane h4.hilite, #home h4.hilite a {
+	font: 14px "Arial Rounded MT Bold", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	text-align: center;
+	color: #C2231F;
+	margin: 20px 0 0 0;
+}
+
+#home_pane h4.hilite a:hover {
+	background: transparent !important;
+	text-decoration: underline;
+}
+
+#home_pane h4.text {
+	font: 12px "Arial Rounded MT Bold", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	text-align: center;
+	width: 450px;
+	margin: 10px auto 0 auto;
+}
+
+#home_pane h4.bottom {
+	margin-bottom: 20px;
+}
+
+/* @end */
+
+/* @end */
+
+/* @group Home Elements */
+
+body#home #navigation {
+	display: none;
+}
+
+body#entry #navigation {
+}
+
+#home_pane .content {
+	width: 800px;
+	margin: 20px auto;
+	clear: both;
+	overflow: hidden;
+	font-family: "Arial Rounded MT Bold", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	line-height: 1.5em;
+}
+
+#home_pane .content .leftCol {
+	width: 520px;
+	padding: 0 47px 0 0;
+	float: left;
+	overflow: hidden;
+	background: url(/media/i/home/main_back.jpg) no-repeat center top;
+}
+
+
+#home_pane .content .leftCol .intro {
+	height: 233px;
+	font-size: 15px;
+	margin-top: -5px;
+}
+
+#home_pane .content .leftCol .intro a.redButton {
+	float: none;
+	position: relative;
+	top:-20px;
+	left: 350px;
+}
+
+#home_pane .content .leftCol h2 {
+	padding: 50px 0 20px 0;
+	font-size: 21px;
+	letter-spacing: 0.05em;
+}
+
+#home_pane .content .leftCol img {
+	float: left;
+	overflow: hidden;
+}
+
+#home_pane .content .leftCol a.headButton {
+	display: block;
+	float: left;
+	border: 1px solid #1C262B;
+	background: url(/media/i/home/button_back.gif) repeat-x;
+	height: 26px;
+	font-size: 21px;
+	color: white;
+	letter-spacing: 0.075em;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	margin: 42px 0 0 10px;
+	padding: 4px 8px 0 8px;
+}
+
+#home_pane .content .leftCol a.headButton:hover {
+	background: url(/media/i/home/button_back_on.gif) repeat-x;
+}
+
+#home_pane .overview {
+	width: 510px;
+	margin-top: 170px;
+	padding: 5px;
+	font-size: 15px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	background-image: url(/media/i/screens/black/75.png);
+}
+
+#home_pane .overview .race_pane {
+	background-color: #65B444;
+	padding: 4px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+}
+
+#home_pane .overview .race_pane .race_info {
+	overflow: hidden;
+	clear: both;
+}
+
+#home_pane .overview .race_pane .race_details {
+	font-size: 14px;
+	float: left;
+}
+
+#home_pane .overview .race_pane .race_details .label {
+	color: white;
+	line-height: 1em;
+	margin-left: 10px;
+}
+
+#home_pane .overview .race_pane .race_details .spot {
+	margin-left: 60px;
+}
+
+#home_pane .overview .race_pane .account_button {
+	float: right;
+}
+
+#home_pane .overview .race_pane .race_list {
+	background-color: white;
+	padding: 2px;
+	overflow: hidden;
+	clear: both;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+}
+
+#home_pane .overview .race_pane .race_list div {
+	padding: 0;
+	float: left;
+}
+
+#home_pane .overview .race_pane .race_list .midGreen {
+	padding: 0 0 0 10px;
+}
+
+#home_pane .overview .race_pane .race_list .race_num {
+	padding: 0 14px;
+	border-right: 1px solid silver;
+}
+#home_pane .overview .race_pane .race_list .race_num.last {
+	border-right: none;
+}
+
+#home_pane .overview .race_pane .race_list .active {
+	color: #C2231F;
+}
+#home_pane .overview .race_pane .race_list .inactive {
+	color: #5b6a74;
+}
+
+
+#home_pane .content .rightCol {
+	margin: 0;
+	width: 233px;
+	float: left;
+	overflow: hidden;
+}
+
+#home_pane .content .widget {
+	border-top: 2px dotted rgba(28,38,43,0.5);
+	padding: 10px 0;
+	text-align: justify;
+	font-size: 12px;
+	line-height: 1.45em;
+}
+#home_pane .content .widget.last {
+	border-bottom: 2px dotted rgba(28,38,43,0.5);
+}
+
+#home_pane .content .widget img {
+	margin: 10px 0;
+}
+
+/* @group Home MiniTable */
+
+
+#home .content .widget h4.tableHead {
+	width: 221px;
+	text-align: left;
+	font-size: 14px;
+	margin: 0 auto;
+	padding: 4px 0;
+	line-height: 20px;
+	color: white;
+	background-color: #1C262B;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	padding-left: 12px;
+}
+
+#home .content .widget .resultbutton a {
+	font-variant: normal;
+	font-size: 12px;
+	line-height: 20px;
+}
+
+#home .content .widget .resultbutton {
+	margin-bottom: -25px;
+	position: relative;
+	top: -25px;
+	left: 143px;
+}
+
+#home .content .widget .raceData {
+	width: 223px;
+	margin: 5px auto 0 auto;
+	padding: 0 5px;
+	overflow: hidden;
+	clear: both;
+	background-color: #CCDAE3;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	margin-bottom: -5px;
+}
+
+#home .content .widget .raceData .item {
+	text-align: left;
+	font-size: 12px;
+	float: left;
+	width: 60px;
+	background-color: white;
+	padding: 2px 0 2px 4px;
+	margin-right: 4px;
+	-webkit-border-bottom-left-radius: 8px;
+	-webkit-border-bottom-right-radius: 8px;
+	-moz-border-radius-bottomleft: 8px;
+	-moz-border-radius-bottomright: 8px;
+}
+#home .content .widget .raceData .item.wide {
+	width: 90px;
+}
+#home .content .widget .raceData .item.narrow {
+	width: 60px;
+}
+#home .content .widget .raceData .item.mini {
+	width: 53px;
+}
+#home .content .widget .raceData .item.last {
+	margin-right: 0;
+}
+
+#home .content .widget .raceData .labels .item {
+	color: #65B444;
+}
+#home .content .widget .raceData .results .item {
+	background-color: transparent;
+}
+
+#home .content .widget .raceInfo {
+	width: 233px;
+	margin: 10px auto 0 auto;
+	overflow: hidden;
+	clear: both;
+}
+
+#home .content .widget .horseInfo,
+#home .content .widget .gainInfo {
+	background-color: #CCDAE3;
+	width: 221px;
+	padding: 6px;
+	float: left;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+}
+
+#home .content .widget .horseInfo {
+	margin: 0 5px 0 0;
+}
+
+#home .content .widget .horseInfo .interior {
+	background-color: white;
+	padding: 8px 0;
+	overflow: hidden;
+	clear: both;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+}
+
+#home .content .widget .horseInfo .interior .title {
+	background-color: #c1d8b8;
+	border-top: 1px solid #1C262B;
+	border-bottom: 1px solid #1C262B;
+	overflow: hidden;
+	clear: both;
+}
+
+#home .content .widget .horseInfo .interior .divider {
+	height: 4px;
+	background-color: #CCDAE3;
+	overflow: hidden;
+	clear: both;
+}
+
+#home .content .widget .horseInfo .interior .cell {
+	width: 32%;
+	font-size: 14px;
+	padding: 4px 0;
+	text-align: center;
+	float: left;
+}
+
+/* @end */
+
+
+/* @group Entry Elements */
+
+#entry_pane {
+	padding: 10px;
+	min-height: 250px;
+	background-color: white;
+	font-size: 18px;
+	overflow: hidden;
+	clear: both;
+}
+
+/* @group entry Elements */
+
+
+#entry_pane .content {
+	width: 800px;
+	margin: 20px auto;
+	clear: both;
+	overflow: hidden;
+	font-family: "Arial Rounded MT Bold", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	line-height: 1.3em;
+	font-size: 13px;
+}
+
+#entry_pane .content .leftCol {
+	margin-top: 10px;
+	width: 530px;
+	padding: 0 47px 0 0;
+	float: left;
+	overflow: hidden;
+}
+
+#entry_pane .content {
+	margin-top: -6px;
+}
+
+#entry_pane .content .leftCol .headline {
+	color: #65B444;
+	font-size: 30px;
+	line-height: 32px;
+	margin-bottom: 15px;
+}
+
+
+#entry_pane .content .leftCol .subheadline {
+	clear: both;
+	color: #C2231F;
+	font-size: 20px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+#entry_pane .content .leftCol .baseline {
+	text-align: right;
+	padding-left: 200px;
+}
+
+#entry_pane .content .leftCol .comment {
+	text-align: right;
+ 	font-size: 10px;
+}
+
+#entry_pane .content .leftCol span {
+ 	font-size: 10px;
+}
+
+/* @end */
+
+
+/* @group results */
+
+#results .main_container a {
+	font-variant: normal;
+	line-height: 19px;
+	float: none;
+	left:660px;
+	position:relative;
+	top:-20px;
+	margin-bottom: -16px;
+}
+
+
+.main_container {
+	padding: 10px;
+	min-height: 250px;
+	background-color: white;
+	font-size: 14px;
+	overflow: hidden;
+	clear: both;
+}
+
+.main_container div.content {
+	width: 860px;
+	margin: 20px auto;
+	clear: both;
+	overflow: hidden;
+	font-family: "Arial Rounded MT Bold", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	line-height: 1.5em;
+}
+
+.main_container div.content div.entryBlock,
+.main_container div.content div.finalBlock {
+	text-align: left;
+	padding: 16px;
+	border-bottom: 2px dotted rgba(28,38,43,0.5);
+}
+
+.main_container div.content div.finalBlock {
+	padding-top: 12px;
+	border-bottom: none;
+}
+
+.main_container div.content h2 {
+	font-size: 18px;
+	margin-bottom: 10px;
+	border-bottom: 2px dotted rgba(28,38,43,0.5);
+}
+
+
+/* @group race results */
+
+#race_results {
+	width: 732px;
+	margin: 20px auto 0 auto;
+	overflow: hidden;
+	clear: both;
+}
+
+#race_results div.label {
+	width: 200px;
+	float: left;
+	overflow: hidden;
+	text-align: right;
+}
+
+#race_results div.interior {
+	width: 532px;
+	float: left;
+	overflow: hidden;
+}
+
+#race_results div.spot { width: 129px; }
+#race_results div.race { width: 129px; }
+#race_results div.horse { width: 129px; }
+#race_results div.odds { width: 129px; }
+
+
+#race_results div.titlebar div.interior div.title.odds {
+	width: 122px;
+	border-right: 1px solid #CCDAE3;
+}
+
+#race_results div.datarow div.data.odds {
+	width: 130px;
+	border: 0;
+}
+
+
+#race_results div.datarow.total {
+	background-color: #C2231F;
+	color: white;
+}
+
+
+/* @group titlebar */
+
+#race_results div.titlebar {
+	overflow: hidden;
+	clear: both;
+	background-color: #CCDAE3;
+	-webkit-border-top-left-radius: 8px;
+	-webkit-border-top-right-radius: 8px;
+	-webkit-border-bottom-left-radius: 8px;
+	-moz-border-radius-topleft: 8px;
+	-moz-border-radius-topright: 8px;
+	-moz-border-radius-bottomleft: 8px;
+}
+
+#race_results div.titlebar div.label {
+	width: 192px;
+	padding: 6px 4px;
+	height: 12px;
+	font-weight: bold;
+	float: left;
+	overflow: hidden;
+	font-size: 12px;
+}
+
+#race_results div.titlebar div.interior {
+	background-color: #CCDAE3;
+	-webkit-border-top-right-radius: 8px;
+	-moz-border-radius-topright: 8px;
+}
+
+#race_results div.titlebar div.interior div.title {
+	padding: 6px 0;
+	height: 12px;
+	text-align: center;
+	font-weight: bold;
+	float: left;
+	overflow: hidden;
+	font-size: 12px;
+	border-right: 1px dotted silver;
+}
+
+/* @end */
+
+/* @group datarow */
+
+#race_results div.datarow {
+	font-size: 14px;
+	height: 36px;
+	overflow: visible;
+	clear: both;
+	-webkit-border-top-left-radius: 8px;
+	-webkit-border-bottom-left-radius: 8px;
+	-moz-border-radius-topleft: 8px;
+	-moz-border-radius-bottomleft: 8px;
+}
+
+#race_results div.border {
+	width: 6px;
+	height: 24px;
+	overflow: hidden;
+	background-color: #CCDAE3;
+	float: left;
+}
+
+#race_results div.datarow div.border {
+	height: 36px;
+}
+
+
+#race_results div.datarow.odd {
+	background-color: #f4f4f4;
+}
+
+#race_results div.datarow.even {
+	background-color: white;
+}
+
+#race_results div.datarow.active {
+	color: white;
+	background-color: #C2231F;
+}
+
+#race_results div.datarow:hover {
+	color: white;
+	background-color: #65b444;
+}
+
+#race_results div.datarow div.label {
+	text-align: right;
+	padding: 4px 10px 4px 0;
+	width: 190px;
+}
+
+#race_results div.datarow div.label div.editbutton {
+	float: left;
+	height: 16px;
+	width: 16px;
+}
+
+#race_results div.datarow div.label span {
+	display: block;
+	float: right;
+	margin-top: 6px;
+}
+
+#race_results div.datarow div.data {
+	height: 16px;
+	padding: 10px 0;
+	text-align: center;
+	float: left;
+	overflow: hidden;
+	border-right: 1px solid silver;
+}
+
+/* @end */
+
+/* @group bottom bars */
+
+#race_results div.bottompad, #race_results div.toppad {
+	height: 16px;
+	background-color: #CCDAE3;
+	overflow: hidden;
+	clear: both;
+}
+
+#race_results div.toppad {
+	background-color: #CCDAE3;
+}
+
+#race_results div.toppad div.label {
+	width: 200px;
+	height: 16px;
+	background-color: white;
+	-webkit-border-top-right-radius: 8px;
+	-moz-border-radius-topright: 8px;
+}
+
+#race_results div.bottompad div.label {
+	background-color: white;
+	height: 16px;
+}
+
+#race_results div.bottompad div.interior, #race_results div.toppad div.interior {
+	height: 16px;
+	background-color: #CCDAE3;
+}
+
+#race_results div.toppad div.topcurves {
+	height: 16px;
+	width: 520px;
+	float: left;
+	background-color: white;
+	-webkit-border-top-left-radius: 8px;
+	-webkit-border-top-right-radius: 8px;
+	-moz-border-radius-topleft: 8px;
+	-moz-border-radius-topright: 8px;
+}
+
+#race_results div.bottompad div.bottomcurves {
+	height: 16px;
+	width: 520px;
+	float: left;
+	background-color: white;
+	-webkit-border-bottom-left-radius: 8px;
+	-webkit-border-bottom-right-radius: 8px;
+	-moz-border-radius-bottomleft: 8px;
+	-moz-border-radius-bottomright: 8px;
+}
+
+#race_results div.bottompad div.border, #race_results div.toppad div.border {
+	float: left;
+	height: 16px;
+	width: 6px;
+	background-color: #CCDAE3;
+}
+
+
+#race_results div.bottombar {
+	height: 24px;
+	overflow: hidden;
+	clear: both;
+}
+
+#race_results div.bottombar div.label a {
+	margin: 0 auto;
+}
+
+#race_results div.bottombar div.interior {
+	font-size: 10px;
+	font-weight: bold;
+	text-align: right;
+	height: 22px;
+	width: 524px;
+	padding: 2px 8px 0 0;
+	background-color: #CCDAE3;
+	-webkit-border-bottom-left-radius: 8px;
+	-webkit-border-bottom-right-radius: 8px;
+	-moz-border-radius-bottomleft: 8px;
+	-moz-border-radius-bottomright: 8px;
+}
+
+/* @end */
+
+/* Navigation */
+
+#entry_pane .navIntro {
+	margin-top: 33px;
+}
+
+#entry_pane .navIntro a {
+	font-variant: normal;
+	line-height: 20px;
+	font-size: 11px;
+}
